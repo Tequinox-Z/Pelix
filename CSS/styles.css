@@ -141,3 +141,48 @@ a:hover {
 .white {
     background-color: rgba(0, 0, 0, 0.645);
 }
+
+#footerContent {
+    background: linear-gradient(to bottom, black, rgb(26, 26, 26));
+}
+
+#logoFooter {
+    width: 7em;
+}
+
+#subscribe {
+    width: 0.9em;
+    position: relative;
+    margin-top: -3px;
+    animation-name: campana;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform: rotateZ(0deg);
+}
+
+@keyframes campana {
+    0%   {
+        transform: rotateZ(0deg);
+    }
+    25%   {
+        transform: rotateZ(60deg);
+    }
+    50%   {
+        transform: rotateZ(-60deg);
+    }
+    75% {
+        transform: rotateZ(60deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+  }
+  
+
+hr {
+    border-color: grey;
+}
+
+#socials {
+    width: 7em;
+}
