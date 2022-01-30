@@ -1,0 +1,116 @@
+/* Others */
+
+* {
+    text-shadow: 1px 1px 1px black;
+}
+
+/* Nav */
+
+
+nav {
+    z-index: 0;
+    height: 9%
+}
+
+nav a {
+    color: white;
+}
+nav li:hover {
+    transform: rotateY(360deg);
+}
+
+a:hover {
+    color: white;
+    font-size: 20px;
+}
+
+#user {
+    width: 2.7em !important
+}
+
+
+nav li {
+    transition: 1s;
+}
+
+#logo {
+    width: 2em;
+}
+
+#botton {
+    outline: none;
+}
+
+#toggleMenu {
+    width: 1.7em !important;
+}
+
+#toggleMenu:hover {
+    transform: rotateZ(180deg);
+}
+
+@media (max-width: 767px) {
+    #links {
+        background-color: rgba(0, 0, 0, 0.645);
+    }
+    nav {
+        height: 11%;
+    }
+}
+
+#links {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbarNav {
+    transition: all 1s cubic-bezier(0, 0.4, 0.29, 1.74) 0s;
+}
+
+.white {
+    background-color: rgba(0, 0, 0, 0.645);
+}
+
+/* Footer */
+
+
+#footerContent {
+    background: linear-gradient(to bottom, black, rgb(26, 26, 26));
+}
+
+#logoFooter {
+    width: 7em;
+}
+
+#subscribe {
+    width: 0.9em;
+    position: relative;
+    margin-top: -3px;
+    animation-name: campana;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform: rotateZ(0deg);
+}
+
+@keyframes campana {
+    0%   {
+        transform: rotateZ(0deg);
+    }
+    25%   {
+        transform: rotateZ(60deg);
+    }
+    50%   {
+        transform: rotateZ(-60deg);
+    }
+    75% {
+        transform: rotateZ(60deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+  }
+  
+#socials {
+    width: 7em;
+}
+
