@@ -12,3 +12,13 @@ document.addEventListener("scroll", () => {
   }
 
 })
+
+
+// Cambio de imagen automático
+
+const PORTADA = document.querySelector("#portada");
+const IMAGES = ['background1.png','background2.png', 'background3.png'];
+
+setInterval(() => {
+
+}, 3000);

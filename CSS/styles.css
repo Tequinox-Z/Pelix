@@ -34,6 +34,19 @@
 
 #title {
     bottom: 0;
+    animation-name: intro;
+    animation-duration: 2.5s;
+}
+
+@keyframes intro {
+   from {
+        left: 40%;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
 }
 
 #plataformas {
@@ -105,6 +118,11 @@ a:hover {
     margin-right: auto;
 }
 
+
+#botton {
+    outline: none;
+}
+
 #icon {
     color: white;
     background-color: white;
@@ -112,6 +130,10 @@ a:hover {
 
 #toggleMenu {
     width: 1.7em !important;
+}
+
+#toggleMenu:hover {
+    transform: rotateZ(180deg);
 }
 
 #user {
@@ -186,3 +208,4 @@ hr {
 #socials {
     width: 7em;
 }
+
