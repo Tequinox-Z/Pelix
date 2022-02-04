@@ -4,8 +4,46 @@
     text-shadow: 1px 1px 1px black;                                        /* Añade sombra el texto para consegui una mejor visualización en fondos claros */
 }
 
+body {
+    background-color: black;
+}
+
 #main {
     background-color: black;
+    animation-name: introWeb;
+    animation-duration: 3s;
+}
+
+@keyframes introWeb {
+    from {
+        top: 50%;
+        opacity: 0;
+    }
+    to {  
+        top: 0%;
+        opacity: 1;
+    }
+}
+
+.circle {   
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.carousel-item {
+    transition: 1.5s;
 }
 
 .image-cover {
@@ -136,6 +174,11 @@ hr {
     text-shadow: 1px 1px 1px black;
 }
 
+.ajust-text {
+    top: -0.7%;
+    position: relative;
+}
+
 .font-middle {
     font-size: 1.3em;
 }
@@ -165,7 +208,8 @@ nav a:hover {
 }
 
 #user {
-    width: 3em !important;
+    margin-top: 0.2%;
+    width: 2.1em !important;
 }
 
 

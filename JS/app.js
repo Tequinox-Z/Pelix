@@ -29,3 +29,21 @@ setInterval(() => {
 $('.carousel').carousel({
   interval: 3000
 })
+
+
+// Typed
+
+const typed = new Typed('.typed', {
+  strings: [
+            'películas',
+            'series',
+            'series de dibujos animados'
+  ],
+  typeSpeed: 75,
+  shuffle: true,
+  backSpeed: 50,
+  loop: true,
+  cursorChar: '_',
+  backDelay: 1500
+
+});
