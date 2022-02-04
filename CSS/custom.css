@@ -164,6 +164,24 @@ h1 {
     }
 }
 
+#devices {
+    animation-name: rotateY;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotateY {
+    0%   {
+        transform: rotateY(0deg);
+    }
+    50%   {
+        transform: rotateY(20deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+  }
+
 hr {
     border-color: grey;
 }
@@ -183,7 +201,44 @@ hr {
     font-size: 1.3em;
 }
 
+#searchPhone {
+    width: 1em !important;
+}
+
 /* Nav */
+
+.ventana_activa::before {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    width: 3.7em;
+    height: 3px;
+    background: red;
+    z-index: 1;
+    transform: scaleX(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    width: 5%;
+    height: 3px;
+    background: red;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+  }
+  
 
 
 nav {
@@ -198,8 +253,7 @@ nav a {
 
 
 nav a:hover {
-    color: white;
-    font-size: 1.4em;
+    color: rgb(255, 255, 255);
 }
 
 

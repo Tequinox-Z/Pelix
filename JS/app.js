@@ -37,7 +37,7 @@ const typed = new Typed('.typed', {
   strings: [
             'películas',
             'series',
-            'series de dibujos animados'
+            'series animadas'
   ],
   typeSpeed: 75,
   shuffle: true,
@@ -47,3 +47,28 @@ const typed = new Typed('.typed', {
   backDelay: 1500
 
 });
+
+const typed2 = new Typed('.typed2', {
+  strings: [
+            'Actualizadas día a día'
+  ],
+  typeSpeed: 75,
+  backSpeed: 50,
+  startDelay: 4000,
+  cursorChar: '_',
+  backDelay: 1500
+});
+
+const typed3 = new Typed('.typed3', {
+  strings: [
+            'Todas las plataformas disponibles',
+            'Compatibilidad multidispositivo'
+  ],
+  typeSpeed: 30,
+  backSpeed: 50,
+  loop:true,
+  cursorChar: '_',
+  backDelay: 1500
+});
+
+
