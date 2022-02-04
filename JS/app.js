@@ -22,3 +22,10 @@ const IMAGES = ['background1.png','background2.png', 'background3.png'];
 setInterval(() => {
 
 }, 3000);
+
+
+// Carrusel
+
+$('.carousel').carousel({
+  interval: 3000
+})

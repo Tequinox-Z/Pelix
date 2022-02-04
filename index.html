@@ -5,19 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pelix</title>
+
+    <!-- Estilos, librerías y favicon -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/custom.css">
     <link rel="icon" href="img/logo.png">
+
+
   </head>
 <body>
+
+    <!-- Contenedor principal -->
+
     <div id="main" class="container-fluid vh-100 p-0">
+
+      <!-- Barra de navegación -->
+
       <nav class="navbar navbar-expand-md text-center fixed-top">
         <img class="navbar-brand" id="logo" src="img/logo.png"/>
+
         <button id="botton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <img id="toggleMenu" src="img/burguer.png"/>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul id="links" class="navbar-nav">
+            <li class="nav-item text-left d-block d-md-none">
+              <a class="nav-link mt-red" href="">
+                <img class="ml-3 d-md-inline-block w-60" title="Iniciar sesión" alt="Iniciar sesión" id="user" src="img/user.png">
+                <p class="d-inline-block mr-4 mt-3 float-right"> Iniciar sesión</p>
+              </a>
+            </li>
             <li class="nav-item active">
               <a class="nav-link" href="index.html">⌂ Pelix <span class="sr-only">(current)</span></a>
             </li>
@@ -32,22 +50,45 @@
             </li>
           </ul>
         </div>
-        <img class="d-none d-md-inline-block" title="Iniciar sesión" alt="Iniciar sesión" id="user" src="img/user.png">
+        <img class="navbar-brand shadow-dark d-md-inline-block d-none" id="search" src="img/search.png"/>
+        <img class="d-none d-md-inline-block shadow-dark" title="Iniciar sesión" alt="Iniciar sesión" id="user" src="img/user.png">
       </nav>
-      <div id="portada" class="vh-100">
-          <div id="title" class="d-block d-md-inline-block text-center text-md-left p-4 p-md-5 d-inline-block position-absolute d-md-inline-block">
-               <h1>Las mejores películas</h1>
-              <div>
-                  <div class="d-inline-block mr-2 ml-1 circle"> </div>
-                  <p class="d-inline-block font-middle">En todos tus dispositivos</p>
-                  <div class="d-inline-block">
-                    <img class="icon d-inline-block" src="img/android.png">                      
-                    <img class="icon d-inline-block" src="img/windows.png">
-                    <img class="icon d-inline-block" src="img/apple.png">
-                   </div>
-              </div>
-           </div>
+
+      <!-- Portada -->
+
+
+      <!-- Sección 1 -->
+
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div id="cover1" class="carousel-item active image-cover">
+          </div>
+          <div id="cover2" class="carousel-item image-cover">
+          </div>
+          <div id="cover3" class="carousel-item image-cover">
+          </div>
+        </div>
       </div>
+
+      <div id="portada">
+        <div id="title" class="d-block d-md-inline-block text-center text-md-left p-4 p-md-5 d-inline-block position-absolute d-md-inline-block">
+             <h1>Las mejores películas</h1>
+            <div>
+                <div class="d-inline-block mr-2 ml-1 circle"> </div>
+                <p class="d-inline-block font-middle">En todos tus dispositivos</p>
+                <div class="d-inline-block">
+                  <img class="icon d-inline-block shadow-dark" src="img/android.png">                      
+                  <img class="icon d-inline-block shadow-dark" src="img/windows.png">
+                  <img class="icon d-inline-block shadow-dark" src="img/apple.png">
+                 </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!-- Sección 2 -->
+
+
       <div id="tendencias" class="vh-100">
         <div id="tendenciasTitle" class="d-block d-md-inline-block text-center text-md-left p-4 p-md-5 d-inline-block position-absolute d-md-inline-block">
              <h1 id="tendenciasText" class="position-relative">Tendencias</h1>
@@ -62,7 +103,10 @@
           <img id="devices" src="img/devices.png" class="w-100 mt-4" alt="">
       </div>
 
+
 <!-- Footer -->
+
+
 <footer class="text-center text-lg-start bg-light text-muted" style="background-color: #101010!important;">
     <div id="footerContent" class="pb-3 d-block p-0 m-0 align-items-center">
       <section class="col-12 col-md-4  d-block d-md-inline-block m-0">
