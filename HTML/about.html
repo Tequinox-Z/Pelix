@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="../CSS/custom.css">
     <link rel="icon" href="../img/logo.png">
   </head>
-<body>
-    <div id="main" class="container-fluid vh-100 p-0">
+<body  style="background-color: #101010!important;">
+    <div id="main" class="container-fluid vh-100 p-0 d-block">
       <nav class="navbar navbar-expand-md text-center fixed-top">
         <img class="navbar-brand" id="logo" src="../img/logo.png"/>
         <button id="botton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,37 +34,76 @@
         </div>
         <img class="d-none d-md-inline-block" title="Iniciar sesión" alt="Iniciar sesión" id="user" src="../img/user.png">
       </nav>
-      <div id="portada" class="vh-100">
-          <div id="title" class="d-block d-md-inline-block text-center text-md-left p-4 p-md-5 d-inline-block position-absolute d-md-inline-block">
-               <h1>Las mejores películas</h1>
-              <div>
-                  <div class="d-inline-block mr-2 ml-1 circle"> </div>
-                  <p class="d-inline-block">En todos tus dispositivos</p>
-                  <div class="d-inline-block">
-                    <img class="icon d-inline-block" src="../img/android.png">                      
-                    <img class="icon d-inline-block" src="../img/windows.png">
-                    <img class="icon d-inline-block" src="../img/apple.png">
-                   </div>
+
+
+
+      <div id="portada" class="row vh-100 d-block">
+          <div class="d-block col-12 d-md-inline-block text-center text-md-left mt-5 p-4 p-md-5 d-inline-block position-absolute d-md-inline-block">
+               <h1>Sobre nosotros</h1>
+               <div class="card h-100 col-10 offset-1" style="background-color: rgb(24, 14, 14);" >
+                
+                <div class="card-body">
+                  <p class="card-text">Pelix es un servicio de streaming que ofrece una amplia variedad de series, películas y otros contenidos premiados en miles de dispositivos conectados a internet.
+                    <br><br>
+                </div>
               </div>
+              <br>
+
+              <div class="card  offset-md-1  offset-lg-1 mr-5 col-lg-2 col-4 d-inline-block" style="background-color: rgb(24, 14, 14);" >
+                
+                <div class="card-body h-100 p-0">
+                    <h5 class="card-title text-white text-center">Nacho</h5>
+                  </div>
+                  <img class="card-img-bottom" src="../img/nacho.jpg" alt="Card image cap">
+                <br>
+                <p></p>
+              </div>
+
+              <div class="card  mr-5 col-lg-2 col-4 d-inline-block" style="background-color: rgb(24, 14, 14);" >
+                
+                <div class="card-body p-0">
+                    <h5 class="card-title text-white text-center">Salva</h5>
+                  </div>
+                  <img class="card-img-bottom " src="../img/salva.jpg" alt="Card image cap">
+                <br>
+                <p></p>
+              </div>
+              
+              <div class="card mt-3 offset-md-1 offset-lg-0  mr-5 col-lg-2 col-4 d-inline-block" style="background-color: rgb(24, 14, 14);" >
+                
+                <div class="card-body p-0">
+                    <h5 class="card-title text-white text-center">Javi</h5>
+                  </div>
+                  <img class="card-img-bottom" src="../img/javi.jpg" alt="Card image cap">
+                <br>
+                <p></p>
+              </div>
+
+              <div class="card  mr-5 col-lg-2 col-4 d-inline-block" style="background-color: rgb(24, 14, 14);" >
+                
+                <div class="card-body p-0">
+                    <h5 class="card-title text-white text-center">Ely</h5>
+                  </div>
+                  <img class="card-img-bottom" src="../img/ely.jpg" alt="Card image cap">
+                <br>
+                <p></p>
+              </div>
+              
            </div>
       </div>
-      <div id="tendencias" class="vh-100">
-        <div id="tendenciasTitle" class="d-block d-md-inline-block text-center text-md-left p-4 p-md-5 d-inline-block position-absolute d-md-inline-block">
-             <h1 id="tendenciasText" class="position-relative">Tendencias</h1>
-            <div>
-                <div class="d-inline-block mr-2 ml-1 circle"> </div>
-                <p class="d-inline-block">Actualizadas día a día</p>
-            </div>
-         </div>
-     </div>
-      <div id="plataformas" class="text-center p-5">
-          <h4 class="mb-0 text-white">Plataformas disponibles</h4>
-          <img id="devices" src="../img/devices.png" class="w-100 mt-4" alt="">
-      </div>
+     
+     
+
+     
 
 <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted" style="background-color: #101010!important;">
-    <div id="footerContent" class="pb-3 d-block p-0 m-0 align-items-center">
+<div>
+
+
+
+
+<footer class="text-center text-lg-start bg-light text-muted " style="background-color: #101010!important;">
+    <div id="footerContent" class="pb-3 d-block p-0 m-0 align-items-center d-block">
       <section class="col-12 col-md-4  d-block d-md-inline-block m-0">
         <a class="text-white d-block text-md-left">Sobre nosotros</a>
         <a class="text-white d-block text-md-left">Contacto</a>
@@ -85,6 +124,7 @@
         </div>
       </section>
     </div>
+
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
