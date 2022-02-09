@@ -261,7 +261,7 @@ nav a:hover {
     border-bottom: 1px solid red;
 }
 
-#user {
+.user {
     margin-top: 0.2%;
     width: 2.1em !important;
 }
