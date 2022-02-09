@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelix</title>
+
+    <!-- Estilos, librerías y favicon -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/custom.css">
+    <link rel="icon" href="../img/logo.png">
+
+
+  </head>
+<body>
+
+    <!-- Contenedor principal -->
+
+    <div id="main" class="container-fluid vh-100 p-0">
+
+      <!-- Barra de navegación -->
+
+      <nav class="navbar navbar-expand-md text-center fixed-top">
+        <img class="navbar-brand" id="logo" src="../img/logo.png"/>
+
+        <button id="botton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img id="toggleMenu" src="../img/burguer.png"/>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul id="links" class="navbar-nav">
+            <li class="nav-item text-left d-block d-md-none">
+              <a class="nav-link mt-red" href="">
+                <img class="ml-3 d-md-inline-block w-60" title="Iniciar sesión" alt="Iniciar sesión" id="user" src="../img/user.png">
+                <p class="d-inline-block mr-4 mt-3 float-right ajust-text"> Iniciar sesión</p>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link ventana_activa" href="../index.html" data-animation="bonus">
+                <i class="fas fa-home"></i>
+                 Pelix 
+                 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/kids.html" data-animation="bonus">
+                <i class="fas fa-child"></i> 
+                Kids
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/series.html" data-animation="bonus">
+                <i class="fas fa-tv"></i> 
+                Series
+              </a>
+            </li>   
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/peliculas.html" data-animation="bonus">
+                <i class="fas fa-video"></i>
+                 Películas
+                </a>
+            </li>
+            <li class="nav-item text-left d-block d-md-none text-center">
+              <a class="nav-link mt-red" href="">
+                <img id="searchPhone" class="ml-3 d-md-inline-block w-25" title="Iniciar sesión" alt="Iniciar sesión" id="user" src="img/search.png">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <img class="navbar-brand shadow-dark d-md-inline-block d-none" id="search" src="../img/search.png"/>
+        <img class="d-none d-md-inline-block shadow-dark" title="Iniciar sesión" alt="Iniciar sesión" id="user" src="../img/user.png">
+      </nav>
+
+      <!-- Portada -->
+
+
+      <!-- Sección 1 -->
+
+      <div class="row" id="filaLogin" style="margin-top:5em; text-shadow: none;">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="square square-lg bg-dark" style="width: 100%; height: 20em; opacity: 0.8;">
+                <div class="card" style="width: 100%;">
+			        <div class="card-header">
+				        <h3>Acceder</h3>
+			        </div>
+			        <div class="card-body">
+				        <form class="custom-form" method="post">
+					        <div class="input-group form-group justify-content-center">
+						        <div class="input-group-prepend">
+							        <span class="input-group-text"><i class="fas fa-user"></i></span>
+						        </div>
+						    <input type="email" placeholder="Correo electrónico" required="required"/>
+						    </div>
+					        <div class="input-group form-group justify-content-center">
+						        <div class="input-group-prepend">
+							        <span class="input-group-text"><i class="fas fa-key"></i></span>
+						        </div>
+					            <input type="password" placeholder="Contraseña"  required="required"/>                        
+					        </div>
+					        <div class="input-group form-group justify-content-center">
+						        <input type="submit" value="Entrar" class="btn login_btn">
+					        </div>
+				        </form>
+			        </div>
+			        <div class="card-footer">
+				        <div class="d-flex justify-content-center links">
+					        ¿No tienes una cuenta?
+                            <a href="#"> Regístrate</a>
+				        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Sección 2 -->
+
+
+      <div id="tendencias" class="vh-100">
+        <div id="tendenciasTitle" class="d-block d-md-inline-block text-center text-md-left p-4 p-md-5 d-inline-block position-absolute d-md-inline-block">
+             <h1 id="tendenciasText" class="position-relative">Tendencias</h1>
+            <div>
+                <div class="d-inline-block mr-2 ml-1 circle"> </div>
+                <p class="d-inline-block font-middle">
+                  <span class="typed2"></span>
+                </p>
+            </div>
+         </div>
+     </div>
+      <div id="plataformas" class="text-center p-5">
+          <h4 class="mb-0 text-white"><span class="typed3"></span></h4>
+          <img id="devices" src="../img/devices.png" class="w-100 mt-4" alt="">
+      </div>
+
+
+<!-- Footer -->
+
+
+<footer class="text-center text-lg-start bg-light text-muted" style="background-color: #101010!important;">
+    <div id="footerContent" class="pb-3 d-block p-0 m-0 align-items-center">
+      <section class="col-12 col-md-4  d-block d-md-inline-block m-0">
+        <a class="text-white d-block text-md-left" href="../HTML/about2.html">Sobre nosotros</a>
+        <a class="text-white d-block text-md-left" href="../HTML/about.html">Contacto</a>
+        <a class="text-white d-block text-md-left">Términos y condiciones</a>
+        <a class="text-white d-block text-md-left">Política de datos personales</a>
+      </section>
+      <section class="col-12 col-md-3 d-block d-md-inline-block mt-3 align-top">
+        <img id="logoFooter" src="../img/logo.png" class="col-12" alt="">
+      </section>
+      <section class="col-12 col-md-4 text-right d-block d-md-inline-block m-0">
+        <div class="d-block d-md-inline-block">
+          <img id="socials" src="../img/redesSociales.png" alt="">
+          <hr>
+          <a class="">
+            <img id="subscribe" src="../img/subscripcion.png" alt="">
+            Subscríbete
+          </a>
+        </div>
+      </section>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+
+    <!-- Scripts -->
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script src="../JS/app.js"></script>
+      <script src="https://kit.fontawesome.com/e8a8431c89.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
