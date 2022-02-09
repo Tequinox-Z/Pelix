@@ -361,3 +361,6 @@ nav li {
     width: 7em;
 }
 
+#filaLogin * {
+    text-shadow: none !important;
+}
