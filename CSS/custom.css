@@ -216,7 +216,7 @@ hr {
 }
 
 
-nav a::before {
+nav li a::before {
     content: '';
     position: absolute;
     bottom: 20%;
