@@ -1,8 +1,11 @@
+/*  Estilos para todos los elementos */
 
 * {
     transition: 0.5s;                                                        /* Añade transición de medio segundo a los elementos */
     text-shadow: 1px 1px 1px black;                                        /* Añade sombra el texto para consegui una mejor visualización en fondos claros */
 }
+
+/* Estilos de background */
 
 body {
     background-color: black;
@@ -13,6 +16,9 @@ body {
     animation-name: introWeb;
     animation-duration: 3s;
 }
+
+
+/* Animaciones */
 
 @keyframes introWeb {
     from {
@@ -277,6 +283,8 @@ nav li {
 
 #botton {
     outline: none;
+    position: absolute;
+    right: 1em;
 }
 
 #toggleMenu {
@@ -295,10 +303,33 @@ nav li {
 @media (max-width: 767px) {
     #links {
         background-color: rgba(0, 0, 0, 0.645);
+        backdrop-filter: blur(4px);
     }
     nav {
         height: 11%;
     }
+    .ventana_activa::before {
+        display: none;
+    }
+
+    .ventana_activa {
+        font-weight: bold;
+    }
+
+    .ajust-text {
+        top: -0.7% !important;
+        right: 0;
+        position: absolute;
+    }
+
+    .ventana_activa i {
+        color: red;
+    }
+
+    nav li a::before {
+        content: none !important;
+    }
+    
 }
 
 #links {
